@@ -1,0 +1,32 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "formatter": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": false
+  },
+  "assist": {
+    "enabled": false
+  },
+  "overrides": [
+    {
+      "includes": ["packages/client/**/*.{ts,tsx,js,jsx}"],
+      "linter": {
+        "rules": {}
+      }
+    },
+    {
+      "includes": ["packages/server/**/*.{ts,tsx,js,jsx}"],
+      "linter": {
+        "rules": {}
+      }
+    },
+    {
+      "includes": ["packages/{domain,database}/**/*.{ts,tsx,js,jsx}"],
+      "linter": {
+        "rules": {}
+      }
+    }
+  ]
+}
