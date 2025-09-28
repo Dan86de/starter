@@ -1,19 +1,19 @@
 {
-	"name": "starter",
-	"version": "0.1.0",
-	"description": "This is starter for full-stack projects",
-	"main": "index.js",
-	"scripts": {
-		"check": "tsc -b tsconfig.json",
-		"lint": "pnpm lint:biome",
-		"lint:biome": "biome lint --diagnostic-level=error .",
-		"lint:fix": "biome check --diagnostic-level=error --write . "
-	},
-	"keywords": [],
-	"author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
-	"license": "ISC",
-	"devDependencies": {
-		"@biomejs/biome": "^2.2.4",
-		"typescript": "^5.9.2"
-	}
+  "name": "starter",
+  "version": "0.1.0",
+  "description": "This is starter for full-stack projects",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc -b tsconfig.json",
+    "lint": "pnpm lint:biome",
+    "lint:biome": "biome lint --diagnostic-level=error .",
+    "lint:fix": "biome check --diagnostic-level=error --write . "
+  },
+  "keywords": [],
+  "author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "typescript": "^5.9.2"
+  }
 }

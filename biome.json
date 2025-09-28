@@ -12,8 +12,39 @@
   "overrides": [
     {
       "includes": ["packages/client/**/*.{ts,tsx,js,jsx}"],
+      "formatter": {
+        "enabled": true,
+        "indentStyle": "tab"
+      },
       "linter": {
-        "rules": {}
+        "enabled": true,
+        "rules": {
+          "recommended": true,
+          "nursery": {
+            "useSortedClasses": {
+              "level": "error",
+              "fix": "safe",
+              "options": {
+                "attributes": ["className"],
+                "functions": ["cn"]
+              }
+            }
+          },
+          "style": {
+            "noRestrictedImports": "error"
+          },
+          "correctness": {
+            "noUnusedImports": {
+              "level": "error",
+              "fix": "safe"
+            }
+          }
+        }
+      },
+      "javascript": {
+        "formatter": {
+          "quoteStyle": "double"
+        }
       }
     },
     {
