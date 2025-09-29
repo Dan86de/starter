@@ -15,11 +15,11 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - starter_postgres_data:/var/lib/postgresql/data
+      - starter_network_postgres_data:/var/lib/postgresql/data
 
 networks:
   default:
     name: starter_network
 
 volumes:
-  starter_postgres_data:
+  starter_network_postgres_data:
