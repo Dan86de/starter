@@ -1,10 +1,13 @@
 {
-	"name": "@org/database",
-	"version": "0.1.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {},
-	"keywords": [],
-	"author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
-	"license": "ISC"
+  "name": "@org/database",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
+  "license": "ISC"
 }

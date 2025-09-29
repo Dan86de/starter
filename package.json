@@ -7,7 +7,9 @@
     "check": "tsc -b tsconfig.json",
     "lint": "pnpm lint:biome",
     "lint:biome": "biome lint --diagnostic-level=error .",
-    "lint:fix": "biome check --diagnostic-level=error --write . "
+    "lint:fix": "biome check --diagnostic-level=error --write . ",
+    "db:start": "pnpm --filter database start",
+    "db:stop": "pnpm --filter database stop"
   },
   "keywords": [],
   "author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
