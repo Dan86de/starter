@@ -49,8 +49,24 @@
     },
     {
       "includes": ["packages/server/**/*.{ts,tsx,js,jsx}"],
+      "formatter": {
+        "enabled": true,
+        "indentStyle": "tab"
+      },
       "linter": {
-        "rules": {}
+        "enabled": true,
+        "rules": {
+          "recommended": true,
+          "style": {
+            "noRestrictedImports": "error"
+          },
+          "correctness": {
+            "noUnusedImports": {
+              "level": "error",
+              "fix": "safe"
+            }
+          }
+        }
       }
     },
     {

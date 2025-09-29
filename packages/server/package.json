@@ -1,10 +1,21 @@
 {
-	"name": "@org/server",
-	"version": "0.1.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {},
-	"keywords": [],
-	"author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
-	"license": "ISC"
+  "name": "@org/server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "@effect/language-service": "^0.41.1",
+    "tsx": "^4.20.6"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.91.1",
+    "@effect/platform-node": "^0.97.1",
+    "effect": "^3.17.14"
+  }
 }
