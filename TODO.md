@@ -4,24 +4,18 @@
 
 ### 1.1 Server Package Setup with Effect
 
-- [ ] Update server package.json with Effect dependencies (`effect`, `@effect/platform-node`, `@effect/schema`, `hono`, `tsx`)
-- [ ] Create basic Effect server structure in `packages/server/src/`
-  - [ ] `src/index.ts` - Main entry point with NodeRuntime
-  - [ ] `src/server.ts` - HTTP server setup with Effect
-  - [ ] `src/app.ts` - Hono app with basic routes
-- [ ] Configure TypeScript for Effect patterns
+- [x] Update server package.json with Effect dependencies (`effect`, `@effect/platform-node`, `@effect/schema`, `tsx`)
+- [x] Create basic Effect server structure in `packages/server/src/`
+  - [x] `src/server.ts` - HTTP server setup with Effect
+- [x] Configure TypeScript for Effect patterns
 - [ ] Add development scripts (dev, build, start)
 
 ### 1.2 Database Integration
 
-- [ ] Add Drizzle ORM dependencies (`drizzle-orm`, `drizzle-kit`, `pg`, `@types/pg`)
-- [ ] Create `drizzle.config.ts` configuration file
+- [x] Add PgClient dependencies (`@effect/sql-pg`)
+- [x] Create `database.ts` configuration file
 - [ ] Set up database connection service using Effect in `src/db/connection.ts`
-- [ ] Create database schema structure:
-  - [ ] `src/db/schema/users.ts` - User table schema
-  - [ ] `src/db/schema/auth.ts` - Auth tables (sessions, accounts, verifications)
-  - [ ] `src/db/schema/index.ts` - Export all schemas
-- [ ] Add database scripts to package.json (generate, migrate, studio, push, seed)
+- [x] Add database migrate scripts to package.json
 
 ### 1.3 Domain Package Enhancement
 
