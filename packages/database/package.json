@@ -2,12 +2,28 @@
   "name": "@org/database",
   "version": "0.1.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "docker-compose up -d",
-    "stop": "docker-compose down"
+    "start": "docker-compose --env-file ../../.env up -d",
+    "stop": "docker-compose --env-file ../../.env down -v",
+    "build": "tsc -b tsconfig.build.json",
+    "check": "tsc -b tsconfig.json",
+    "migrate": "dotenv -e ../../.env tsx ./src/scripts/migrator.ts"
   },
   "keywords": [],
   "author": "Daniel Noworyta <contact@danielnoworyta.com> (https://danielnoworyta.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@effect/sql": "^0.45.0",
+    "@effect/sql-pg": "^0.46.0",
+    "effect": "^3.17.14"
+  },
+  "devDependencies": {
+    "@effect/language-service": "^0.41.1",
+    "@effect/platform": "^0.91.1",
+    "@effect/platform-node": "^0.97.1",
+    "@types/node": "^24.6.0",
+    "dotenv-cli": "^10.0.0"
+  }
 }
